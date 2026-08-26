@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>歷屆教材庫｜CCIRC</title>
+  <meta name="description" content="CCIRC 歷屆 C++ 競技程式教材庫，整合學長姐公開的 HackMD 講義、筆記與題解，可搜尋、預覽後再前往原筆記。">
+  <meta name="theme-color" content="#080c11">
+  <link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16.png"><link rel="apple-touch-icon" href="../images/apple-touch-icon.png"><link rel="stylesheet" href="../css/style.css">
+  <meta property="og:title" content="歷屆教材庫｜CCIRC">
+  <meta property="og:description" content="CCIRC 歷屆 C++ 競技程式教材庫，整合學長姐公開的 HackMD 講義、筆記與題解，可搜尋、預覽後再前往原筆記。">
+  <meta property="og:type" content="website"><meta property="og:image" content="../images/logo.png"><meta name="twitter:image" content="../images/logo.png">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到主要內容</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../index.html"><img class="brand-mark" src="../images/logo.png" alt="CCIRC" width="44" height="44"><span class="brand-text"><span class="brand-title">CCIRC</span><span class="brand-sub">精誠資訊讀書會</span></span></a>
+    <button class="nav-toggle" aria-label="開啟網站選單" aria-expanded="false" aria-controls="site-nav">☰</button>
+    <nav id="site-nav" class="nav-links" aria-label="主要選單">
+      <a href="../index.html">首頁</a><a href="about.html">關於</a><a href="learning.html">學習路線</a>
+      <a href="resources.html">教材庫</a><a href="legacy.html">傳承</a>
+      <a href="join.html" class="nav-cta">加入</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="page-head">
+    <div class="wrap">
+      <p class="kicker">RESOURCE CENTER</p>
+      <h1>歷屆教材庫</h1>
+      <p>把不同屆講師留下的 HackMD 整理成一個入口。搜尋到教材後，可以先預覽公開筆記，再決定是否前往 HackMD 閱讀完整內容。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="notice" style="margin-bottom:22px">
+        <span class="notice-icon">💡</span>
+        <span>為避免搜尋引擎搜尋到歷屆分散的筆記造成學習混亂，本頁面整合了 CCIRC 歷屆完整講義目錄；資料會隨歷屆筆記整理持續補充。</span>
+      </div>
+
+      <div class="cohort-filters" role="group" aria-label="依屆數篩選">
+        <button type="button" class="filter-chip active" data-cohort="all">全部顯示</button>
+        <button type="button" class="filter-chip" data-cohort="3rd">第三屆</button>
+        <button type="button" class="filter-chip" data-cohort="2nd">第二屆</button>
+        <button type="button" class="filter-chip" data-cohort="1st">第一屆</button>
+      </div>
+
+      <div class="resource-toolbar">
+        <input aria-label="搜尋教材" id="resource-search" placeholder="搜尋：APCS、二分搜、陣列……" type="search">
+        <select id="resource-category">
+          <option value="all">所有分類</option>
+          <option value="講義">講義</option>
+          <option value="APCS">APCS</option>
+          <option value="題解">題解</option>
+          <option value="分享筆記">分享筆記</option>
+          <option value="補充">補充</option>
+        </select>
+      </div>
+
+      <p class="empty" id="resource-empty-cohort" hidden>📁 第二屆暫無公開講義與筆記資料，補齊後會第一時間更新於此。</p>
+      <div class="resource-grid" id="resource-grid"></div>
+      <p class="empty" id="resource-empty" hidden>沒有找到符合條件的教材。</p>
+    </div>
+  </section>
+
+  <div class="modal" id="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title" aria-hidden="true">
+    <div class="modal-box">
+      <div class="modal-head">
+        <strong id="preview-title">HackMD 筆記預覽</strong>
+        <button class="modal-close" id="preview-close" aria-label="關閉預覽">×</button>
+      </div>
+      <iframe class="preview-frame" id="preview-frame" title="HackMD 筆記預覽" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <div class="modal-foot">
+        <a class="btn btn-primary" id="preview-open" href="#" target="_blank" rel="noopener noreferrer">在 HackMD 開啟完整筆記 ↗</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="wrap footer-inner"><span class="footer-brand">CCIRC</span><span>今天的學員，明天的講師。</span><span>C++競技程式共學社群</span></div></footer>
+<script src="../js/main.js"></script>
+<script src="../js/resources-data.js"></script>
+<script src="../js/resources.js"></script>
+</body>
+</html>
