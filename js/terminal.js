@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { text: "main", class: "token-func" },
     { text: "() {\n" },
     { text: "    cout << ", class: "token-keyword" },
-    { text: '"今天的學員，明天的講師。"', class: "token-string" },
+    { text: '"精誠中學資訊讀書會"', class: "token-string" },
     { text: " << endl;\n" },
     { text: "    // C++競技程式共學社群\n", class: "token-comment" },
     { text: "    return ", class: "token-keyword" },
