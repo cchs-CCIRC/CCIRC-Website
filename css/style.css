@@ -463,7 +463,7 @@ main{padding-top:116px}
 .scroll-progress{
   position:fixed;left:0;top:0;height:4px;width:100%;z-index:9999;
   transform-origin:left center;transform:scaleX(0);
-  background:linear-gradient(90deg, #ff007f, #0080ff);;
+  background:linear-gradient(90deg, #9d00ff, #0080ff);;
   box-shadow:0 0 14px rgba(127,179,221,.5);
 }
 
