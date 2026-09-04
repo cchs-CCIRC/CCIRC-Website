@@ -19,7 +19,7 @@
   <link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16.png"><link rel="apple-touch-icon" href="../images/apple-touch-icon.png"><link rel="stylesheet" href="../css/style.css">
   <meta property="og:title" content="歷屆教材庫｜CCIRC">
   <meta property="og:description" content="CCIRC 歷屆 C++ 競技程式教材庫，整合學長姐公開的 HackMD 講義、筆記與題解，支援關鍵字搜尋與站內即時預覽後再前往原筆記。">
-  <meta property="og:type" content="website"><meta property="og:image" content="../images/logo.png"><meta name="twitter:image" content="../images/logo.png">
+  <meta property="og:type" content="website"><meta property="og:url" content="https://cchs-ccirc.github.io/CCIRC-Website/pages/resources.html"><meta property="og:image" content="https://cchs-ccirc.github.io/CCIRC-Website/images/logo.png"><meta name="twitter:image" content="https://cchs-ccirc.github.io/CCIRC-Website/images/logo.png">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
@@ -60,7 +60,7 @@
       </div>
 
       <div class="resource-toolbar">
-        <input aria-label="搜尋教材" id="resource-search" placeholder="搜尋：APCS、二分搜、陣列……" type="search">
+        <input aria-label="搜尋教材" id="resource-search" placeholder="搜尋教材標題、內容、語法或概念，例如：vector、二分搜尋……" type="search">
         <select id="resource-category">
           <option value="all">所有分類</option>
           <option value="講義">講義</option>
@@ -70,6 +70,7 @@
           <option value="補充">補充</option>
         </select>
       </div>
+      <p class="resource-search-status" id="resource-search-status" aria-live="polite">正在載入教材全文索引…</p>
 
       <p class="empty" id="resource-empty-cohort" hidden>📁 該屆教材正由團隊進行數位化整理與校對中</p>
       <div class="resource-grid" id="resource-grid"></div>
@@ -94,6 +95,7 @@
 <footer class="site-footer"><div class="wrap footer-inner"><span class="footer-brand">CCIRC</span><span>寫程式不孤單</span><span>C++競技程式共學社群</span></div></footer>
 <script src="../js/main.js"></script>
 <script src="../js/resources-data.js"></script>
+<script src="../js/resources-search-index.js"></script>
 <script src="../js/resources.js"></script>
 </body>
 </html>

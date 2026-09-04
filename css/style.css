@@ -175,6 +175,11 @@ main{display:block;padding-top:var(--header-height)}
 .resource-card{display:flex;flex-direction:column}
 .resource-card h3{overflow-wrap:anywhere;margin-top:14px}
 .resource-card p{font-size:.94rem;overflow-wrap:anywhere;flex:1 0 auto}
+.resource-search-status{margin:-10px 0 18px;color:var(--muted);font-size:.86rem}
+.resource-card .resource-snippet{line-height:1.75}
+.resource-card mark{background:rgba(127,179,221,.22);color:var(--text);padding:1px 3px;border-radius:4px;font-weight:800}
+.search-match-badge{display:inline-flex;align-items:center;padding:4px 8px;border-radius:999px;background:rgba(127,179,221,.12);color:var(--brand-glow);font-size:.72rem;font-weight:800}
+
 .tags{display:flex;gap:7px;flex-wrap:wrap}
 .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px}
 .small-btn{padding:8px 12px;font-size:.88rem}

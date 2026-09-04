@@ -1,0 +1,36 @@
+name: Update resource full-text search index
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "js/resources-data.js"
+      - "tools/build-resource-search-index.mjs"
+      - ".github/workflows/update-resource-search.yml"
+  schedule:
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build-search-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build search index
+        run: node tools/build-resource-search-index.mjs
+
+      - name: Commit updated index
+        run: |
+          if git diff --quiet -- js/resources-search-index.js; then
+            echo "Search index is already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/resources-search-index.js
+          git commit -m "chore: update resource full-text search index"
+          git push

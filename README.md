@@ -29,3 +29,13 @@ CCIRC-Website/
 ```
 
 ---
+
+
+### 教材庫全文搜尋
+
+教材庫支援以 HackMD 筆記正文進行全文搜尋。搜尋索引由 `tools/build-resource-search-index.mjs` 建立，並透過 `.github/workflows/update-resource-search.yml` 自動更新。
+
+- `js/resources-data.js`：教材 metadata 與 HackMD URL
+- `js/resources-search-index.js`：自動產生的全文搜尋索引
+- `tools/build-resource-search-index.mjs`：抓取公開 HackMD Markdown 並建立索引
+- GitHub Actions：修改教材資料時更新，並每日定期同步一次
