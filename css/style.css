@@ -461,10 +461,10 @@ main{padding-top:116px}
 .ccirc-reveal:nth-child(4){transition-delay:210ms}
 
 .scroll-progress{
-  position:fixed;left:0;top:0;height:2px;width:100%;z-index:9999;
+  position:fixed;left:0;top:0;height:4px;width:100%;z-index:9999;
   transform-origin:left center;transform:scaleX(0);
-  background:linear-gradient(90deg,var(--brand),var(--brand-strong));
-  box-shadow:0 0 12px rgba(127,179,221,.5);
+  background:linear-gradient(90deg, #ff007f, #0080ff);;
+  box-shadow:0 0 14px rgba(127,179,221,.5);
 }
 
 .modal-box{border-radius:22px;box-shadow:0 40px 120px rgba(0,0,0,.65)}
