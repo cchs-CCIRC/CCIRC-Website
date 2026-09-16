@@ -1,6 +1,6 @@
 # 💻 CCIRC Official Website
 
-**精誠中學資訊讀書會 ·** ***C**hing **C**heng high school **I**nformation **R**eading **C**lub*
+**精誠中學資訊讀書會 ·** ***C**hing **C**heng High School **I**nformation **R**eading **C**lub*
 
 > *Learn to code. Think deeper. Build together.*
 
