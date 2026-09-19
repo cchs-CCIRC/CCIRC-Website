@@ -60,9 +60,10 @@ document.addEventListener("DOMContentLoaded",()=>{
   syncScroll();
 
   /* Reveal-on-scroll */
-  const targets=document.querySelectorAll(
+  // 教材庫的講義卡片（及包住它們的區塊）不套用上移出現動畫
+  const targets=[...document.querySelectorAll(
     ".section,.resource-grid,.resource-card,.timeline-item,.hero-panel,.card,.roadmap-step,.info-block,.support-equal-card"
-  );
+  )].filter(el=>!el.closest(".resource-grid")&&!el.querySelector(".resource-grid"));
   if(reduce||!("IntersectionObserver" in window)){
     targets.forEach(el=>el.classList.add("is-visible"));
   }else{
